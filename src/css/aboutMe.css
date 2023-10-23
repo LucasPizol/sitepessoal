@@ -1,19 +1,18 @@
 .about-me {
   background: linear-gradient(to right, #fff 70%, rgb(50, 109, 235) 30%);
-  overflow: hidden;
   margin-top: 100px;
   margin-bottom: 100px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .about-me-container {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
   gap: 80px;
-  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom:50px;
 }
 .about-me-container img {
   height: 100%;
@@ -51,8 +50,7 @@
 }
 @media (max-width: 767px) {
   .about-me {
-    background: linear-gradient(to bottom, #fff 70%, rgb(67, 116, 221) 30%);
-    --mask: radial-gradient(
+    --Mask: radial-gradient(
           78.26px at 50% calc(100% - 105px),
           #000 99%,
           #0000 101%
@@ -60,16 +58,17 @@
         calc(50% - 70px) 0/140px 100%,
       radial-gradient(78.26px at 50% calc(100% + 70px), #0000 99%, #000 101%)
         50% calc(100% - 35px) / 140px 100% repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-    mask: var(--mask);
-    margin-top: 20px;
+    -webkit-mask: var(--Mask);
+    mask: var(--Mask);
+    background: linear-gradient(to bottom, #fff 70%, rgb(67, 116, 221) 30%);
+    overflow: hidden;
+    padding-bottom: 100px;
   }
   .about-me-container {
     flex-direction: column;
     padding-top: 10px;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     gap: 20px;
   }
   .about-me-container img {

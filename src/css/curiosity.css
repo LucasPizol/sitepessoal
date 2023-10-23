@@ -16,14 +16,14 @@
   color: var(--text-color);
   font-size: 19px;
 }
-.curiosity-container img {
+.curiosity-container svg {
   max-width: 300px;
 }
 .curiosity-container img svg {
   fill: var(--yellow-color);
 }
 @media (max-width: 991px) {
-  .curiosity-container img {
+  .curiosity-container svg {
     max-width: 200px;
   }
 }

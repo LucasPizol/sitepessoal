@@ -108,6 +108,7 @@
 @media (max-width: 767px) {
   .skills {
     margin-top: -160px;
+    z-index: -1;
   }
   .main-card {
     grid-template-columns: repeat(2, 1fr);
@@ -128,7 +129,7 @@
     width: 38px;
   }
   .div-card {
-    padding: 10px 5px;
+    padding: 15px;
     align-items: flex-start;
     justify-content: stretch;
   }

@@ -1,0 +1,78 @@
+.projects {
+  padding-top: 60px;
+
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+.projects-title {
+  padding-bottom: 50px;
+}
+.projects h1 {
+  color: var(--yellow-color);
+  font-size: 50px;
+}
+.projects-title p {
+  font-size: 19px;
+  color: #fff;
+}
+.projects-content {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  overflow: hidden;
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  gap: 30px;
+  padding-bottom: 30px;
+  min-width: 300px;
+}
+.project h2 {
+  color: rgb(69, 123, 204);
+}
+.project p {
+  color: rgb(63, 108, 175);
+}
+.project img {
+  width: 100%;
+  border-radius: 13px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+.project a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 5px;
+  background-color: black;
+  padding: 7px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.project a img {
+  width: 30px;
+  height: 30px;
+}
+.project:nth-child(3) img {
+  object-position: center;
+}
+
+@media (max-width: 450px) {
+  .projects-content {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+  }
+}

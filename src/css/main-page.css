@@ -1,0 +1,116 @@
+.greetings-page {
+  background: linear-gradient(
+    to right,
+    rgb(6, 106, 255),
+    #598cfa,
+    rgb(67, 116, 221)
+  );
+  overflow: hidden;
+  --mask: radial-gradient(
+        67.08px at 50% calc(100% - 90px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(67.08px at 50% calc(100% + 60px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+.greetings-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 88vh;
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+.greetings-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  z-index: 1;
+}
+.greetings-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.greetings-text h1 {
+  color: var(--yellow-color);
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.greetings-text h2 {
+  line-height: 0;
+}
+.greetings-text p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: rgb(233, 233, 233);
+}
+.greetings-info a {
+  background: var(--yellow-color);
+  transition: 0.3s !important;
+
+  padding: 10px 30px;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  &:hover{
+    background-color: #2753b3;
+  }
+}
+.greetings-content img {
+  align-self: flex-end;
+  justify-self: flex-end;
+  position: absolute;
+  right: 0;
+  max-width: 500px;
+  filter: drop-shadow(0px 5px 5px #ffd579);
+  transform: translateY(125px) !important;
+}
+@media (max-width: 1200px) {
+  .greetings-text h1 {
+    font-size: 65px;
+  }
+  .greetings-content img {
+    max-width: 425px;
+  }
+}
+@media (max-width: 991px) {
+  .greetings-content img {
+    max-width: 380px;
+  }
+}
+@media (max-width: 767px) {
+  .greetings-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 90px
+  }
+  .greetings-content img {
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    margin: 0 auto;
+    left: 0;
+  }
+}
+@media (max-width: 450px) {
+    .greetings-content h1 {
+        font-size: 55px;
+    }
+  .greetings-content img {
+    width: 100%;
+  }
+}

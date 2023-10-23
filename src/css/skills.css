@@ -1,0 +1,173 @@
+.skills {
+  padding-top: 125px;
+  background-color: rgb(223, 245, 255);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 125px;
+
+}
+.skills h1 {
+  margin-bottom: 50px;
+  z-index: 5;
+  font-size: 50px;
+}
+.skills-image-background {
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  bottom: 0;
+  right: 0;
+  filter: opacity(0.6);
+}
+.main-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  gap: 35px;
+  z-index: 5;
+}
+.div-card {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 40px 30px;
+  gap: 15px;
+  z-index: 5;
+  box-shadow: 0px 12px 15px -8px rgba(0, 0, 0, 0.062);
+  transition: 0.7s !important;
+  &:hover {
+    box-shadow: 0px 12px 15px -8px rgba(0, 0, 0, 0.15);
+  }
+}
+.card-image {
+  max-width: 70px;
+  width: 100%;
+}
+.div-card h2 {
+  font-size: 23px;
+  color: #066aff;
+  text-align: center;
+  z-index: 5;
+}
+.div-card p {
+  font-size: 19px;
+  text-align: center;
+  color: #696969;
+}
+.hard-skills {
+  margin-top: 50px;
+  z-index: 1;
+}
+.hard-skills-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.hard-skill {
+  display: flex;
+  z-index: 1;
+  flex: 1;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 5px;
+  min-width: 130px;
+  height: 100%;
+}
+.hard-skill p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(88, 88, 88);
+  margin: 0;
+  padding: 0;
+}
+
+.hard-skills-content img {
+  height: 70px;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .div-card p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .skills {
+    margin-top: -160px;
+  }
+  .main-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-image-background {
+    max-width: 100%;
+    margin: auto auto;
+    left: 0;
+    top: 0;
+    transform: translateX(30%);
+  }
+}
+@media (max-width: 520px) {
+  .main-card {
+    gap: 25px 10px;
+  }
+  .div-card img {
+    width: 38px;
+  }
+  .div-card {
+    padding: 10px 5px;
+    align-items: flex-start;
+    justify-content: stretch;
+  }
+
+  .div-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .div-card h2 {
+    font-size: 17px;
+  }
+
+  .div-card p {
+    font-size: 14px;
+  }
+
+  .div-card h2,
+  .div-card p {
+    text-align: start;
+  }
+}
+/* @media (max-width: 450px) {
+    .main-card {
+      flex-direction: row;
+      overflow: auto;
+      width: 95vw;
+      gap: 10px;
+    }
+    .div-card {
+      min-width: 260px;
+      box-shadow: none;
+      border: 1px solid rgb(212, 212, 212)
+    }
+  }
+  @media(max-width: 310px) {
+  .div-card {
+      min-width: 250px;
+  }
+  } */
